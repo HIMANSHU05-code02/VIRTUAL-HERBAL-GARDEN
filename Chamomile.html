@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chamomile - 3D Model and Information</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #fbc02d;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    header img {
+      max-width: 150px;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .main-content {
+      display: flex;
+      height: calc(100vh - 140px);
+    }
+
+    #Container3D {
+      flex: 1 1 50%;
+      background: #fffde7;
+    }
+
+    #description {
+      flex: 1 1 50%;
+      padding: 20px;
+      overflow-y: auto;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+
+      #Container3D,
+      #description {
+        flex: 1 1 100%;
+        height: 50vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Chamomile-German-Seeds-2.jpg" alt="Ministry of AYUSH" />
+  </header>
+  <div class="main-content">
+    <div id="Container3D"></div>
+    <div id="description">
+      <h1>Chamomile</h1>
+      <p><strong>Common Names:</strong> Chamomile</p>
+      <p><strong>Latin Names:</strong> Matricaria chamomilla, Chamaemelum nobile</p>
+      <h2>Background</h2>
+      <p>Chamomile is a daisy-like plant widely recognized for its calming effects and use in traditional herbal remedies and teas.</p>
+      <h2>Uses</h2>
+      <ul>
+        <li>Promotes relaxation and improves sleep quality.</li>
+        <li>Soothes digestive issues and stomach discomfort.</li>
+        <li>Reduces inflammation and skin irritations.</li>
+        <li>Commonly consumed as tea or applied in skincare products.</li>
+      </ul>
+      <h2>Interesting Fact</h2>
+      <p>Chamomile has been used as a natural remedy for over 2,000 years, and its essential oil is known for its anti-inflammatory properties.</p>
+    </div>
+  </div>
+  <script type="module" src="main2.js"></script>
+</body>
+</html>

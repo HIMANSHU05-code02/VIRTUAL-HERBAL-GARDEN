@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ginkgo - 3D Model and Information</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    header img {
+      max-width: 150px;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .main-content {
+      display: flex;
+      height: calc(100vh - 140px);
+    }
+
+    #Container3D {
+      flex: 1 1 50%;
+      background: #e8f5e9;
+    }
+
+    #description {
+      flex: 1 1 50%;
+      padding: 20px;
+      overflow-y: auto;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+
+      #Container3D,
+      #description {
+        flex: 1 1 100%;
+        height: 50vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Green+Ginkgo+Biloba+tree.png" alt="Ministry of AYUSH" />
+  </header>
+  <div class="main-content">
+    <div id="Container3D"></div>
+    <div id="description">
+      <h1>Ginkgo</h1>
+      <p><strong>Common Names:</strong> Ginkgo, Maidenhair Tree</p>
+      <p><strong>Latin Name:</strong> Ginkgo biloba</p>
+      <h2>Background</h2>
+      <p>Ginkgo is one of the oldest tree species in the world, known for its fan-shaped leaves and its use in traditional Chinese medicine.</p>
+      <h2>Uses</h2>
+      <ul>
+        <li>Improves blood circulation and brain function.</li>
+        <li>Enhances memory and cognitive health.</li>
+        <li>Reduces symptoms of anxiety and dementia.</li>
+        <li>Used in teas, extracts, and supplements.</li>
+      </ul>
+      <h2>Interesting Fact</h2>
+      <p>Ginkgo trees can live for over a thousand years, and some species have been around since the time of dinosaurs!</p>
+    </div>
+  </div>
+  <script type="module" src="main2.js"></script>
+</body>
+</html>

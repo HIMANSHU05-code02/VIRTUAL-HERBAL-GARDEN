@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Echinacea - 3D Model and Information</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #9c27b0;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    header img {
+      max-width: 150px;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .main-content {
+      display: flex;
+      height: calc(100vh - 140px);
+    }
+
+    #Container3D {
+      flex: 1 1 50%;
+      background: #f3e5f5;
+    }
+
+    #description {
+      flex: 1 1 50%;
+      padding: 20px;
+      overflow-y: auto;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+
+      #Container3D,
+      #description {
+        flex: 1 1 100%;
+        height: 50vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images.jpeg" alt="Ministry of AYUSH" />
+  </header>
+  <div class="main-content">
+    <div id="Container3D"></div>
+    <div id="description">
+      <h1>Echinacea</h1>
+      <p><strong>Common Names:</strong> Echinacea, Purple Coneflower</p>
+      <p><strong>Latin Name:</strong> Echinacea purpurea</p>
+      <h2>Background</h2>
+      <p>Echinacea is a flowering plant native to North America, known for its vibrant purple petals and immune-boosting properties.</p>
+      <h2>Uses</h2>
+      <ul>
+        <li>Enhances immune system function.</li>
+        <li>Helps prevent and treat colds and flu.</li>
+        <li>Supports wound healing and reduces inflammation.</li>
+        <li>Used in teas, tinctures, and supplements.</li>
+      </ul>
+      <h2>Interesting Fact</h2>
+      <p>Echinacea was widely used by Native Americans for its medicinal benefits long before becoming popular in modern herbal medicine.</p>
+    </div>
+  </div>
+  <script type="module" src="main2.js"></script>
+</body>
+</html>

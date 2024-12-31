@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Remedies</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #009688;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 1.8rem;
+      color: #00796b;
+    }
+
+    .content p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 10px 0;
+    }
+
+    /* Remedies Section */
+    .remedies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .remedy-card {
+      background: linear-gradient(135deg, #ffcc80, #ff8a65);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      color: white;
+      text-align: center;
+    }
+
+    .remedy-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .remedy-card p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .remedy-card a {
+      background-color: #00796b;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .remedy-card a:hover {
+      background-color: #004d40;
+    }
+
+    footer {
+      background-color: #009688;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Plant Remedies</h1>
+  </header>
+
+  <div class="content">
+    <h2>Natural Remedies from Medicinal Plants</h2>
+    <p>
+      Discover how plants can heal and nourish. Below are some popular remedies derived from plants, 
+      along with their uses and preparation methods.
+    </p>
+  </div>
+
+  <section class="remedies">
+    <div class="remedy-card">
+      <h3>Tulsi (Holy Basil)</h3>
+      <p>
+        Helps boost immunity and relieve respiratory issues. Often used in herbal teas.
+      </p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="remedy-card">
+      <h3>Aloe Vera</h3>
+      <p>
+        Known for treating skin burns, wounds, and improving digestion when consumed.
+      </p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="remedy-card">
+      <h3>Neem</h3>
+      <p>
+        Antibacterial properties make it ideal for skin care and oral hygiene.
+      </p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="remedy-card">
+      <h3>Ginger</h3>
+      <p>
+        Eases nausea, improves digestion, and reduces inflammation. Common in teas and soups.
+      </p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="remedy-card">
+      <h3>Turmeric</h3>
+      <p>
+        A powerful anti-inflammatory spice used for boosting immunity and healing wounds.
+      </p>
+      <a href="#">Learn More</a>
+    </div>
+    <div class="remedy-card">
+      <h3>Ashwagandha</h3>
+      <p>
+        An adaptogen used to reduce stress, boost energy, and improve concentration.
+      </p>
+      <a href="#">Learn More</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Virtual Herbarium | Embracing the Healing Power of Plants</p>
+  </footer>
+</body>
+</html>

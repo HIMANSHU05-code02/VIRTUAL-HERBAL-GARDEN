@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Locations</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e8f5e9;
+      color: #004d00;
+    }
+
+    header {
+      background-color: #004d00;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    #map {
+      height: 80vh;
+      width: 100%;
+    }
+
+    .info-box {
+      text-align: center;
+      padding: 10px;
+      font-size: 1rem;
+    }
+
+    footer {
+      background-color: #004d00;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Plant Locations</h1>
+  </header>
+
+  <div class="info-box">
+    <p>Explore the locations where medicinal plants are found. Click on the markers to learn more about the plants in each area.</p>
+  </div>
+
+  <!-- Map Section -->
+  <div id="map"></div>
+
+  <footer>
+    <p>&copy; 2024 Virtual Herbarium | Mapping the Healing Power of Nature</p>
+  </footer>
+
+  <!-- Google Maps API Script -->
+  <script>
+    function initMap() {
+      // Center of the map (example: India)
+      const center = { lat: 20.5937, lng: 78.9629 };
+
+      // Initialize the map
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 5,
+        center: center,
+      });
+
+      // Example plant locations (latitude, longitude)
+      const locations = [
+        { name: "Neem Tree", lat: 22.5726, lng: 88.3639, info: "Common in Kolkata, known for its antibacterial properties." },
+        { name: "Tulsi Plant", lat: 28.7041, lng: 77.1025, info: "Sacred plant widely found in Delhi, boosts immunity." },
+        { name: "Ashwagandha", lat: 19.076, lng: 72.8777, info: "Grown near Mumbai, used in Ayurveda for stress relief." },
+      ];
+
+      // Add markers to the map
+      locations.forEach((location) => {
+        const marker = new google.maps.Marker({
+          position: { lat: location.lat, lng: location.lng },
+          map: map,
+          title: location.name,
+        });
+
+        // Info window for the marker
+        const infoWindow = new google.maps.InfoWindow({
+          content: `<h3>${location.name}</h3><p>${location.info}</p>`,
+        });
+
+        // Show info window on marker click
+        marker.addListener("click", () => {
+          infoWindow.open(map, marker);
+        });
+      });
+    }
+  </script>
+
+  <!-- Load Google Maps API -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+  </script>
+</body>
+</html>

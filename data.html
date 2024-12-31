@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicinal Plant Database</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Medicinal Plant Database</h1>
+    </header>
+    <table>
+        <thead>
+            <tr>
+                <th>Common Name</th>
+                <th>Scientific Name</th>
+                <th>Family</th>
+                <th>Uses</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Aloe Vera</td><td>Aloe barbadensis miller</td><td>Asphodelaceae</td><td>Burns, skin irritations, constipation</td></tr>
+            <tr><td>Ashwagandha</td><td>Withania somnifera</td><td>Solanaceae</td><td>Stress reduction, adaptogen, anti-inflammatory</td></tr>
+            <tr><td>Turmeric</td><td>Curcuma longa</td><td>Zingiberaceae</td><td>Anti-inflammatory, antioxidant, arthritis</td></tr>
+            <tr><td>Ginger</td><td>Zingiber officinale</td><td>Zingiberaceae</td><td>Nausea, digestion, anti-inflammatory</td></tr>
+            <tr><td>Garlic</td><td>Allium sativum</td><td>Amaryllidaceae</td><td>Immune support, cardiovascular health, antimicrobial</td></tr>
+            <tr><td>Peppermint</td><td>Mentha piperita</td><td>Lamiaceae</td><td>Digestive upset, headaches, muscle pain</td></tr>
+            <tr><td>Chamomile</td><td>Matricaria chamomilla</td><td>Asteraceae</td><td> sleep aid, anti-inflammatory</td></tr>
+                <tr>
+                    <td>Echinacea</td>
+                    <td>Echinacea purpurea</td>
+                    <td>Asteraceae</td>
+                    <td>Immune support, cold and flu symptoms</td>
+                </tr>
+                <tr>
+                    <td>Lavender</td>
+                    <td>Lavandula angustifolia</td>
+                    <td>Lamiaceae</td>
+                    <td>Relaxation, sleep aid, anxiety</td>
+                </tr>
+                <tr>
+                    <td>Tea Tree</td>
+                    <td>Melaleuca alternifolia</td>
+                    <td>Myrtaceae</td>
+                    <td>Antiseptic, antifungal, skin infections</td>
+                </tr>
+                <tr>
+                    <td>Neem</td>
+                    <td>Azadirachta indica</td>
+                    <td>Meliaceae</td>
+                    <td>Antiseptic, antifungal, skin conditions</td>
+                </tr>
+                <tr>
+                    <td>Holy Basil (Tulsi)</td>
+                    <td>Ocimum tenuiflorum</td>
+                    <td>Lamiaceae</td>
+                    <td>Adaptogen, stress reduction, immune support</td>
+                </tr>
+                <tr>
+                    <td>Brahmi</td>
+                    <td>Bacopa monnieri</td>
+                    <td>Plantaginaceae</td>
+                    <td>Cognitive enhancement, memory, anxiety</td>
+                </tr>
+                <tr>
+                    <td>Gotu Kola</td>
+                    <td>Centella asiatica</td>
+                    <td>Apiaceae</td>
+                    <td>Wound healing, cognitive function, circulatory health</td>
+                </tr>
+                <tr>
+                    <td>Milk Thistle</td>
+                    <td>Silybum marianum</td>
+                    <td>Asteraceae</td>
+                    <td>Liver support, detoxification</td>
+                </tr>
+                <tr>
+                    <td>Dandelion</td>
+                    <td>Taraxacum officinale</td>
+                    <td>Asteraceae</td>
+                    <td>Diuretic, liver support, digestion</td>
+                </tr>
+                <tr>
+                    <td>Slippery Elm</td>
+                    <td>Ulmus rubra</td>
+                    <td>Ulmaceae</td>
+                    <td>Soothes irritated mucous membranes, coughs, digestive issues</td>
+                </tr>
+                <tr>
+                    <td>Cranberry</td>
+                    <td>Vaccinium macrocarpon</td>
+                    <td>Ericaceae</td>
+                    <td>Urinary tract infections</td>
+                </tr>
+                <tr>
+                    <td>Ginkgo Biloba</td>
+                    <td>Ginkgo biloba</td>
+                    <td>Ginkgoaceae</td>
+                    <td>Cognitive function, circulation</td>
+                </tr>
+                <tr>
+                    <td>St. John's Wort</td>
+                    <td>Hypericum perforatum</td>
+                    <td>Hypericaceae</td>
+                    <td>Mild to moderate depression</td>
+                </tr>
+                <tr>
+                    <td>Calendula</td>
+                    <td>Calendula officinalis</td>
+                    <td>Asteraceae</td>
+                    <td>Skin healing, anti-inflammatory</td>
+                </tr>
+                <tr>
+                    <td>Comfrey</td>
+                    <td>Symphytum officinale</td>
+                    <td>Boraginaceae</td>
+                    <td>Wound healing, bone and joint health (external use only)</td>
+                </tr>
+                <tr>
+                    <td>Evening Primrose</td>
+                    <td>Oenothera biennis</td>
+                    <td>Onagraceae</td>
+                    <td>PMS symptoms, skin conditions</td>
+                </tr>
+                <tr>
+                    <td>Feverfew</td>
+                    <td>Tanacetum parthenium</td>
+                    <td>Asteraceae</td>
+                    <td>Migraine prevention</td>
+                </tr>
+                <tr>
+                    <td>Goldenseal</td>
+                    <td>Hydrastis canadensis</td>
+                    <td>Ranunculaceae</td>
+                    <td>Antimicrobial, immune support</td>
+                </tr>
+                <tr>
+                    <td>Marshmallow Root</td>
+                    <td>Althaea officinalis</td>
+                    <td>Malvaceae</td>
+                    <td>Soothes irritated mucous membranes, coughs, digestive issues</td>
+                </tr>
+                <tr>
+                    <td>Plantain</td>
+                    <td>Plantago major</td>
+                    <td>Plantaginaceae</td>
+                    <td>Wound healing, anti-inflammatory</td>
+                </tr>
+                <tr>
+                    <td>Yarrow</td>
+                    <td>Achillea millefolium</td>
+                    <td>Asteraceae</td>
+                    <td>Wound healing, anti-inflammatory, digestive aid</td>
+                </tr>
+                <tr>
+                    <td>Black Cohosh</td>
+                    <td>Actaea racemosa</td>
+                    <td>Ranunculaceae</td>
+                    <td>Menopausal symptoms</td>
+                </tr>
+                <tr>
+                    <td>Dong Quai</td>
+                    <td>Angelica sinensis</td>
+                    <td>Apiaceae</td>
+                    <td>Women's health, menstrual irregularities</td>
+                </tr>
+                <tr>
+                    <td>Ginseng (Asian)</td>
+                    <td>Panax ginseng</td>
+                    <td>Araliaceae</td>
+                    <td>Adaptogen, energy, cognitive function</td>
+                </tr>
+                <tr>
+                    <td>Hawthorn</td>
+                    <td>Crataegus monogyna</td>
+                    <td>Rosaceae</td>
+                    <td>Cardiovascular health</td>
+                </tr>
+                <tr>
+                    <td>Kava</td>
+                    <td>Piper methysticum</td>
+                    <td>Piperaceae</td>
+                    <td>Anxiety, relaxation</td>
+                </tr>
+                <tr>
+                    <td>Saw Palmetto</td>
+                    <td>Serenoa repens</td>
+                    <td>Arecaceae</td>
+                    <td>Prostate health</td>
+                </tr>
+                <tr>
+                    <td>Valerian</td>
+                    <td>Valeriana officinalis</td>
+                    <td>Caprifoliaceae</td>
+                    <td>Sleep aid, anxiety</td>
+                </tr>
+                <tr>
+                    <td>Witch Hazel</td>
+                    <td>Hamamelis virginiana</td>
+                    <td>Hamamelidaceae</td>
+                    <td>Skin irritations, hemorrhoids</td>
+                </tr>
+                <tr>
+                    <td>Burdock</td>
+                    <td>Arctium lappa</td>
+                    <td>Asteraceae</td>
+                    <td>Skin conditions, detoxification</td>
+                </tr>
+                <tr>
+                    <td>Cat's Claw</td>
+                    <td>Uncaria tomentosa</td>
+                    <td>Rubiaceae</td>
+                    <td>Immune support, anti-inflammatory</td>
+                </tr>
+                <tr>
+                    <td>Devil's Claw</td>
+                    <td>Harpagophytum procumbens</td>
+                    <td>Pedaliaceae</td>
+                    <td>Arthritis, pain relief</td>
+                </tr>
+                <tr>
+                    <td>Elderberry</td>
+                    <td>Sambucus nigra</td>
+                    <td>Adoxaceae</td>
+                    <td>Immune support, cold and flu symptoms</td>
+                </tr>
+                <tr>
+                    <td>Horehound</td>
+                    <td>Marrubium vulgare</td>
+                    <td>Lamiaceae</td>
+                    <td>Coughs, respiratory conditions</td>
+                </tr>
+                <tr>
+                    <td>Juniper</td>
+                    <td>Juniperus communis</td>
+                    <td>Cupressaceae</td>
+                    <td>Diuretic, urinary tract infections</td>
+                </tr>
+                <tr>
+                    <td>Licorice</td>
+                    <td>Glycyrrhiza glabra</td>
+                    <td>Fabaceae</td>
+                    <td>Soothes irritated mucous membranes, coughs, digestive issues</td>
+                </tr>
+                <tr>
+                    <td>Mullein</td>
+                    <td>Verbascum thapsus</td>
+                    <td>Scrophulariaceae</td>
+                    <td>Respiratory conditions, coughs</td>
+                </tr>
+                <tr>
+                    <td>Nettle</td>
+                    <td>Urtica dioica</td>
+                    <td>Urticaceae</td>
+                    <td>Allergies, anti-inflammatory</td>
+                </tr>
+                <tr>
+                    <td>Red Clover</td>
+                    <td>Trifolium pratense</td>
+                    <td>Fabaceae</td>
+                    <td>Menopausal symptoms</td>
+                </tr>
+                <tr>
+                    <td>Rosemary</td>
+                    <td>Rosmarinus officinalis</td>
+                    <td>Lamiaceae</td>
+                    <td>Cognitive function, memory</td>
+                </tr>
+                <tr>
+                    <td>Sage</td>
+                    <td>Salvia officinalis</td>
+                    <td>Lamiaceae</td>
+                    <td>Memory, sore throat</td>
+                </tr>
+                <tr>
+                    <td>Thyme</td>
+                    <td>Thymus vulgaris</td>
+                    <td>Lamiaceae</td>
+                    <td>Respiratory conditions, coughs</td>
+                </tr>
+                <tr>
+                    <td>Uva Ursi</td>
+                    <td>Arctostaphylos uva-ursi</td>
+                    <td>Ericaceae</td>
+                    <td>Urinary tract infections</td>
+                </tr>
+                <tr>
+                    <td>Andrographis</td>
+                    <td>Andrographis paniculata</td>
+                    <td>Acanthaceae</td>
+                    <td>Immune support, anti-inflammatory</td>
+                </tr>
+                <tr>
+                    <td>Bilberry</td>
+                    <td>Vaccinium myrtillus</td>
+                    <td>Ericaceae</td>
+                    <td>Eye health, antioxidant</td>
+                </tr>
+                <tr>
+                    <td>Cascara Sagrada</td>
+                    <td>Rhamnus purshiana</td>
+                    <td>Rhamnaceae</td>
+                    <td>Constipation (short-term use only)</td>
+                </tr>
+                <tr>
+                    <td>Cayenne</td>
+                    <td>Capsicum annuum</td>
+                    <td>Solanaceae</td>
+                    <td>Pain relief, circulation</td>
+                </tr>
+                <tr>
+                    <td>Cleavers</td>
+                    <td>Galium aparine</td>
+                    <td>Rubiaceae</td>
+                    <td>Lymphatic support, diuretic</td>
+                </tr>
+                <tr>
+                    <td>Coltsfoot</td>
+                    <td>Tussilago farfara</td>
+                    <td>Asteraceae</td>
+                    <td>Coughs, respiratory conditions</td>
+                </tr>
+                <tr>
+                    <td>Cramp Bark</td>
+                    <td>Viburnum opulus</td>
+                    <td>Adoxaceae</td>
+                    <td>Muscle cramps, menstrual cramps</td>
+                </tr>
+                <tr>
+                    <td>Damiana</td>
+                    <td>Turnera diffusa</td>
+                    <td>Passifloraceae</td>
+                    <td>Aphrodisiac, mood enhancer</td>
+                </tr>
+                <tr>
+                    <td>Elecampane</td>
+                    <td>Inula helenium</td>
+                    <td>Asteraceae</td>
+                    <td>Respiratory conditions, coughs</td>
+                </tr>
+                <tr>
+                    <td>Eyebright</td>
+                    <td>Euphrasia officinalis</td>
+                    <td>Orobanchaceae</td>
+                    <td>Eye conditions</td>
+                </tr>
+                <tr>
+                    <td>Fennel</td>
+                    <td>Foeniculum vulgare</td>
+                    <td>Apiaceae</td>
+                    <td>Digestion, bloating</td>
+                </tr>
+                <tr>
+                    <td>Fenugreek</td>
+                    <td>Trigonella foenum-graecum</td>
+                    <td>Fabaceae</td>
+                    <td>Blood sugar regulation, lactation support</td>
+                </tr>
+                <tr>
+                    <td>Gentian</td>
+                    <td>Gentiana lutea</td>
+                    <td>Gentianaceae</td>
+                    <td>Digestion, appetite stimulant</td>
+                </tr>
+                <tr>
+                    <td>Gymnema Sylvestre</td>
+                    <td>Gymnema sylvestre</td>
+                    <td>Apocynaceae</td>
+                    <td>Blood sugar regulation</td>
+                </tr>
+                <tr>
+                    <td>Hops</td>
+                    <td>Humulus lupulus</td>
+                    <td>Cannabaceae</td>
+                    <td>Relaxation, sleep aid</td>
+                </tr>
+                <tr>
+                    <td>Horsetail</td>
+                    <td>Equisetum arvense</td>
+                    <td>Equisetaceae</td>
+                    <td>Bone health, diuretic</td>
+                </tr>
+                <tr>
+                    <td>Hyssop</td>
+                    <td>Hyssopus officinalis</td>
+                    <td>Lamiaceae</td>
+                    <td>Respiratory conditions</td>
+                </tr>
+                <tr>
+                    <td>Irish Moss</td>
+                    <td>Chondrus crispus</td>
+                    <td>Gigartinaceae</td>
+                    <td>Soothes mucous membranes, coughs</td>
+                </tr>
+                <tr>
+                    <td>Kudzu</td>
+                    <td>Pueraria lobata</td>
+                    <td>Fabaceae</td>
+                    <td>Alcohol withdrawal, menopausal symptoms</td>
+                </tr>
+                <tr>
+                    <td>Lemon Balm</td>
+                    <td>Melissa officinalis</td>
+                    <td>Lamiaceae</td>
+                    <td>Relaxation, sleep aid, antiviral</td>
+                </tr>
+                <tr>
+                    <td>Lovage</td>
+                    <td>Levisticum officinale</td>
+                    <td>Apiaceae</td>
+                    <td>Diuretic, digestive aid</td>
+                </tr>
+                <tr>
+                    <td>Marigold</td>
+                    <td>Calendula officinalis</td>
+                    <td>Asteraceae</td>
+                    <td>Skin healing, anti-inflammatory</td>
+                </tr>
+                <tr>
+                    <td>Meadowsweet</td>
+                    <td>Filipendula ulmaria</td>
+                    <td>Rosaceae</td>
+                    <td>Pain relief, anti-inflammatory</td>
+                </tr>
+                <tr>
+                    <td>Motherwort</td>
+                    <td>Leonurus cardiaca</td>
+                    <td>Lamiaceae</td>
+                    <td>Anxiety, heart palpitations</td>
+                </tr>
+                <tr>
+                    <td>Myrrh</td>
+                    <td>Commiphora myrrha</td>
+                    <td>Burseraceae</td>
+                    <td>Antiseptic, anti-inflammatory</td>
+                </tr>
+                <tr>
+                    <td>Oregon Grape Root</td>
+                    <td>Mahonia aquifolium</td>
+                    <td>Berberidaceae</td>
+                    <td>Liver support, skin conditions</td>
+                </tr>
+                <tr>
+                    <td>Parsley</td>
+                    <td>Petroselinum crispum</td>
+                    <td>Apiaceae</td>
+                    <td>Diuretic, urinary tract health</td>
+                </tr>
+                <tr>
+                    <td>Passionflower</td>
+                    <td>Passiflora incarnata</td>
+                    <td>Passifloraceae</td>
+                    <td>Anxiety, sleep aid</td>
+                </tr>
+                <tr>
+                    <td>Pennyroyal</td>
+                    <td>Mentha pulegium</td>
+                    <td>Lamiaceae</td>
+                    <td>Emmenagogue (use with extreme caution)</td>
+                </tr>
+                <tr>
+                    <td>Psyllium</td>
+                    <td>Plantago ovata</td>
+                    <td>Plantaginaceae</td>
+                    <td>Constipation, cholesterol reduction</td>
+                </tr>
+                <tr>
+                    <td>Raspberry Leaf</td>
+                    <td>Rubus idaeus</td>
+                    <td>Rosaceae</td>
+                    <td>Uterine tonic, menstrual cramps</td>
+                </tr>
+                <tr>
+                    <td>Rue</td>
+                    <td>Ruta graveolens</td>
+                    <td>Rutaceae</td>
+                    <td>Menstrual problems</td>
+                </tr>
+        </tbody>
+    </table>
+        
+</body>
+</html>

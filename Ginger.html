@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ginger - 3D Model and Information</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff9800;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    header img {
+      max-width: 150px;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .main-content {
+      display: flex;
+      height: calc(100vh - 140px);
+    }
+
+    #Container3D {
+      flex: 1 1 50%;
+      background: #fff3e0;
+    }
+
+    #description {
+      flex: 1 1 50%;
+      padding: 20px;
+      overflow-y: auto;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+      }
+
+      #Container3D,
+      #description {
+        flex: 1 1 100%;
+        height: 50vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="611wwwhkpyL._AC_UF1000,1000_QL80_.jpg" alt="Ministry of AYUSH" />
+  </header>
+  <div class="main-content">
+    <div id="Container3D"></div>
+    <div id="description">
+      <h1>Ginger</h1>
+      <p><strong>Common Names:</strong> Ginger</p>
+      <p><strong>Latin Name:</strong> Zingiber officinale</p>
+      <h2>Background</h2>
+      <p>Ginger is a flowering plant whose rhizome (underground stem) is widely used as a spice and traditional medicine, especially in Asia.</p>
+      <h2>Uses</h2>
+      <ul>
+        <li>Relieves nausea and morning sickness.</li>
+        <li>Reduces inflammation and muscle soreness.</li>
+        <li>Aids digestion and alleviates bloating.</li>
+        <li>Used in teas, food, and essential oils.</li>
+      </ul>
+      <h2>Interesting Fact</h2>
+      <p>Ginger has been used for over 5,000 years in traditional Chinese and Indian medicine.</p>
+    </div>
+  </div>
+  <script type="module" src="main2.js"></script>
+</body>
+</html>
